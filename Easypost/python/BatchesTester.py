@@ -3,12 +3,7 @@ import easypost
 import json
 from pathlib import Path
 
-
-OUTPUT = '/A/Path/To/A/Text/File/For/output.txt'
-
 easypost.api_key = TESTKEY
-
-f = open(OUTPUT, "a")
 
 ######################################################################################
 # import the batch JSON. Simply copy and paste the JSON into batch.json
