@@ -8,8 +8,7 @@ rates COMMON to each shipment
 import easypost
 import json
 
-OUTPUT = '/A/Path/To/A/Text/File/For/output.txt'
-f = open(OUTPUT, "a")
+
 
 easypost.api_key = <API KEY>
 
@@ -20,6 +19,11 @@ easypost.api_key = <API KEY>
 JSON = '/Users/madams/Desktop/conf/orders.json'
 with open(JSON) as json_file:
     order = json.load(json_file)
+
+order_id = order["id"}    
+LOGS = Path('/Users/madams/Desktop/LOGS/orders/'+order_id+'.txt')
+LOGS.touch(exist_ok=True)
+f = open(LOGS, "a")
 
 ######################################################################################
 # Iterate through the shipments
