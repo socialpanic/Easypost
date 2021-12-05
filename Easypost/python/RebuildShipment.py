@@ -3,26 +3,13 @@ import json
 from pathlib import Path
 import eptest
 
-#this block of code reads API key from a textfile. Either alter your file structure accordingly or define it statically
-try:
-    with open('/Users/madams/Desktop/conf/conf.txt') as f:
-        TESTKEY = str.splitlines(f.readline())
-        USERID = str.splitlines(f.readline())
-        PRODKEY = str.splitlines(f.readline())
-        f.close()
-        TESTKEY=TESTKEY[0]
-        USERID=USERID[0]
-        PRODKEY = PRODKEY[0]
-except:
-    print('failed to parse conf file for values')
-
-easypost.api_key = TESTKEY
+easypost.api_key = <API KEY>
 
 ######################################################################################
 # import the shipment JSON. Simply copy and paste the JSON into shipment.json
 ######################################################################################
 
-JSON = '/Users/madams/Desktop/conf/shipment.json'
+JSON = '/a/path/to/shipment.json'
 with open(JSON) as json_file:
     shipment = json.load(json_file)
 
@@ -30,7 +17,7 @@ with open(JSON) as json_file:
 # create a logfile for the shipment
 ######################################################################################
 
-LOGS = Path('/Users/madams/Desktop/LOGS/shipments/'+str(shipment['id'])+'.txt')
+LOGS = Path('a/path/for/dumping/logs/'+str(shipment['id'])+'.txt')
 LOGS.touch(exist_ok=True)
 f = open(LOGS, "a")
 
