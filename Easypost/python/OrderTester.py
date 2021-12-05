@@ -7,23 +7,11 @@ rates COMMON to each shipment
 
 import easypost
 import json
-#this block of code reads API key from a textfile. Either alter your file structure accordingly or define it statically
-try:
-    with open('/Users/madams/Desktop/conf/conf.txt') as f:
-        TESTKEY = str.splitlines(f.readline())
-        USERID = str.splitlines(f.readline())
-        PRODKEY = str.splitlines(f.readline())
-        f.close()
-        TESTKEY=TESTKEY[0]
-        USERID=USERID[0]
-        PRODKEY = PRODKEY[0]
-except:
-    print('failed to parse conf file for values')
 
 OUTPUT = '/Users/madams/Desktop/CODE/EasyPost/python/output.txt'
 f = open(OUTPUT, "a")
 
-easypost.api_key = TESTKEY
+easypost.api_key = <API KEY>
 
 ######################################################################################
 # import the ORDER JSON. Simply copy and paste the JSON into shipment.json
