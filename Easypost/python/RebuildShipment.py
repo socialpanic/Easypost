@@ -1,7 +1,6 @@
 import easypost
 import json
 from pathlib import Path
-import eptest
 
 easypost.api_key = <API KEY>
 
