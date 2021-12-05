@@ -9,7 +9,7 @@ easypost.api_key = TESTKEY
 # import the batch JSON. Simply copy and paste the JSON into batch.json
 ######################################################################################
 
-JSON = '/Users/madams/Desktop/conf/batch.json'
+JSON = '/a/directory/containing/batch.json'
 with open(JSON) as json_file:
     batch = json.load(json_file)
 
@@ -18,7 +18,7 @@ with open(JSON) as json_file:
 ######################################################################################
 batch_id = batch["public_id"]
 
-LOGS = Path('/Users/madams/Desktop/LOGS/batches/'+batch_id+'.txt')
+LOGS = Path('/a/directory/for/dumping/batch/logs/'+batch_id+'.txt')
 LOGS.touch(exist_ok=True)
 f = open(LOGS, "a")
 
