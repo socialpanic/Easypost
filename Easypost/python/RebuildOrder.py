@@ -2,7 +2,7 @@ import easypost
 import json
 from pathlib import Path
 
-easypost.api_key = TESTKEY
+easypost.api_key = <API KEY>
 
 
 ######################################################################################
