@@ -8,7 +8,7 @@ rates COMMON to each shipment
 import easypost
 import json
 
-OUTPUT = '/Users/madams/Desktop/CODE/EasyPost/python/output.txt'
+OUTPUT = '/A/Path/To/A/Text/File/For/output.txt'
 f = open(OUTPUT, "a")
 
 easypost.api_key = <API KEY>
