@@ -16,7 +16,7 @@ easypost.api_key = <API KEY>
 # import the ORDER JSON. Simply copy and paste the JSON into shipment.json
 ######################################################################################
 
-JSON = '/Users/madams/Desktop/conf/orders.json'
+JSON = '/a/directory/for/reading/orders.json'
 with open(JSON) as json_file:
     order = json.load(json_file)
 
