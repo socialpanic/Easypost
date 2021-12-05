@@ -20,8 +20,7 @@ JSON = '/Users/madams/Desktop/conf/orders.json'
 with open(JSON) as json_file:
     order = json.load(json_file)
 
-order_id = order["id"}    
-LOGS = Path('/Users/madams/Desktop/LOGS/orders/'+order_id+'.txt')
+LOGS = Path('A/path/to/a/directory/for/dumping/output/'+str(order['public_id'])+'.txt')
 LOGS.touch(exist_ok=True)
 f = open(LOGS, "a")
 
