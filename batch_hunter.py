@@ -14,9 +14,9 @@ from pathlib import Path
 '''
 [
   {batch JSON 1},
-  {batch JSON 1},
-  {batch JSON 1},
-  {batch JSON 1}
+  {batch JSON 2},
+  {batch JSON 3},
+  {batch JSON 4}
 ]
 '''
 
