@@ -1,7 +1,7 @@
 require 'easypost'
 require 'json'
 
-EasyPost.api_key = 'EZTK9a283cc2276d4a068950bbb1cdd135bcBlydiiRGJiWOzJXdvWQ3qA'
+EasyPost.api_key = ''
 
 data  = File.read('/home/devbox/Desktop/conf/shipment.json')
 shipment = JSON.parse(data)
