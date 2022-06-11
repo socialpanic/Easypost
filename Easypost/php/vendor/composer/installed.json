@@ -1,0 +1,64 @@
+{
+    "packages": [
+        {
+            "name": "easypost/easypost-php",
+            "version": "5.2.1",
+            "version_normalized": "5.2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EasyPost/easypost-php.git",
+                "reference": "a75e3f097fab664684b15ea84aa3b3870cb5e3d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EasyPost/easypost-php/zipball/a75e3f097fab664684b15ea84aa3b3870cb5e3d9",
+                "reference": "a75e3f097fab664684b15ea84aa3b3870cb5e3d9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "allejo/php-vcr-sanitizer": "^1.0.9",
+                "php-vcr/php-vcr": "^1.5",
+                "phpunit/phpunit": "^9",
+                "squizlabs/php_codesniffer": "^3.6"
+            },
+            "time": "2022-05-31T19:54:48+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "EasyPost\\": "lib/EasyPost/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "EasyPost Developers",
+                    "email": "oss@easypost.com",
+                    "homepage": "https://www.easypost.com"
+                }
+            ],
+            "description": "EasyPost Shipping API Client Library for PHP",
+            "homepage": "https://github.com/EasyPost/easypost-php",
+            "keywords": [
+                "api",
+                "easypost",
+                "shipping"
+            ],
+            "support": {
+                "issues": "https://github.com/EasyPost/easypost-php/issues",
+                "source": "https://github.com/EasyPost/easypost-php/tree/v5.2.1"
+            },
+            "install-path": "../easypost/easypost-php"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

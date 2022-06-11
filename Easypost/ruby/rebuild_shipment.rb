@@ -1,9 +1,9 @@
 require 'easypost'
 require 'json'
 
-EasyPost.api_key = ''
+EasyPost.api_key = 'EZTK9a283cc2276d4a068950bbb1cdd135bcxzWxaDgVutJ0chKkdDhxyw'
 
-data  = File.read('/home/devbox/Desktop/conf/shipment.json')
+data  = File.read('/home/devbox/conf/shipments.json')
 shipment = JSON.parse(data)
 
 shipment["to_address"].delete("id")
@@ -60,7 +60,6 @@ for rate in newShipment["rates"] do
     puts "RATE: "+rate['rate']
     puts "******************************************"
 end
-
 
 if newShipment['messages']
   for msg in shipment['messages'] do
